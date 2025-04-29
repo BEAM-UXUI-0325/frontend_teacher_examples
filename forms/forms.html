@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Forms</title>
+    <link rel="stylesheet" href="styles/forms.css">
+</head>
+<body>
+    <form class="contact-form">
+        <h6 class="page-name">Contact</h6>
+        <h2 class="title">Get in Touch</h2>
+        <p class="description">We'd love to hear from you. Please fill out this form.</p>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <section class="form-name">
+                <div class="form-control">
+                    <label for="fname">First name</label>
+                    <input type="text" id="fname" placeholder="First name">
+                </div>
+        
+                <div class="form-control">
+                    <label for="lname">Last name</label>
+                    <input type="text" id="lname" placeholder="Last name">
+                </div>
+            </section>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@company.com">
+            </div>
+
+            <div class="form-control">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+            </div>
+        </fieldset>
+
+        <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Leave us a message..."></textarea>
+        </div>
+
+        <div class="privacy-policy">
+            <input type="checkbox" id="privacy">
+            <label for="privacy">You agree to our friendly <a href="#">privacy policy</a></label>
+        </div>
+        <div><a href="./form_validation.html">Login instead</a></div>
+
+        <button class="submit" type="submit" disabled>Send Message</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+.parent {
+    outline: 2px dashed red;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 7em;
+}
+
+.child {
+    /* flex: 1 0 10em; */
+    /* flex: 1; */
+    /* flex: 1 0; */
+    /* flex: 1 3em; */
+    /* flex: 3em; */
+    /* flex-basis: 10em; */
+    /* width: 12em; */
+    /* flex-grow: 1; */
+}
+
+.first {
+    background-color: purple;
+    /* flex-basis: 7em;
+    flex-grow:3;
+    flex-shrink: 1; */
+}
+
+.second{
+    background-color: dodgerblue;
+    /* flex-basis: 10em;
+    flex-grow:2;
+    flex-shrink: 2; */
+    /* align-self: end; */
+}
+
+.third {
+    background-color: aqua;
+    /* flex-basis: 15em;
+    flex-grow:1;
+    flex-shrink: 3; */
+}

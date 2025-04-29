@@ -1,0 +1,76 @@
+body, html {
+    font-family: sans-serif;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 400px;
+    margin-inline: auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-name {
+    text-align: center;
+    margin: 0;
+    color: blueviolet;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+}
+
+.description {
+    text-align: center;
+    margin: 0;
+    font-size: 8pt;
+    color: grey;
+}
+
+label {
+    font-size: 8pt;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+input, textarea {
+    display: inline-block;
+    padding: 0.3em 0.7em;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+*::placeholder {
+    font-size: 8pt;
+}
+
+.submit {
+    border: 0;
+    color: white;
+    background-color: blueviolet;
+    padding: 0.7em;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    background-color: rgb(130, 39, 216);
+}
+
+.submit:active {
+    background-color: rgb(108, 33, 178);
+}
+
+.submit:disabled {
+    background-color: rgb(139, 105, 170);
+}

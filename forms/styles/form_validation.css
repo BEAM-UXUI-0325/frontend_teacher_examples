@@ -1,0 +1,37 @@
+
+.input:valid {
+    border: 2px solid green;
+}
+
+.input:invalid {
+    border: 2px dashed red;
+}
+
+/* this is the label */
+.checkbox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 20px;
+    width: 35px;
+    padding: 2.5px;
+    background-color: lightgrey;
+    border-radius: 100vh;
+}
+/* this is the span inside the label */
+.inner {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100vh;
+    background-color: grey;
+}
+
+.cb:checked + .checkbox {
+    justify-content: end;
+    background-color: lightgreen;
+}
+
+.cb:checked + .checkbox .inner {
+    background-color: green;
+}

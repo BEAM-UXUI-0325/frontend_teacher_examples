@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:user-valid {
+            border: 2px solid purple;
+        }
+
+        input:user-invalid {
+            border: 2px solid red;
+        }
+
+        input:user-invalid::after {
+  content: " ❌ Please enter a valid email.";
+  color: red;
+  display: block;
+  font-size: 0.9em;
+  margin-top: 4px;
+}
+
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="first" minlength="2" maxlength="84" required>
+        <input type="text" placeholder="last" pattern="^a.{2,}" required>
+        <input type="email" placeholder="email" minlength="5" maxlength="84" required>
+        <input type="number" min="13" max="124" required placeholder="age" step="1">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./styles/form_validation.css">
+</head>
+<body>
+    <form>
+        <input class="input" type="email" minlength="6" maxlength="128" required placeholder="Enter email...">
+        <input class="input" type="number" min="13" max="124" step="10" required placeholder="Age">
+        <div>
+            <input style="display: none;" class="cb" id="cb" type="checkbox">
+            <label class="checkbox" for="cb">
+                <span class="inner"></span>
+            </label>
+            <span>Accept Terms and Conditions</span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
