@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin: 0;}
+        .container {
+            display: grid;
+            grid-template-rows: 3em minmax(40em, auto);
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 1.5em;
+            row-gap: .5em;
+            grid-template-areas: 
+            "header      header  header"
+            "aside-left  main    aside-right";
+            /* background-color: rgb(0 0 0); */
+        }
+        .header{
+            grid-area: header;
+            background-color: coral;
+            /* background-color: rgb(27,31,35); */
+            position: sticky;
+            top: 0;
+        }
+        .side-left{
+            grid-area: aside-left;
+            background-color: lightgreen;
+        }
+        .main{
+            grid-area: main;
+            background-color: dodgerblue;
+        }
+        .side-right{
+            grid-area: aside-right;
+            background-color: palevioletred;
+        }
+        .side-left{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1em;
+        }
+        .aside-card {
+            box-shadow: 1px 2px 7px black;
+            width: 12em;
+            height: 7em;
+            background-color: rgb(27,31,35);
+        }
+        .side-right{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 1em;
+        }
+
+
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .post{
+            height: 6em;
+            background-color: rgb(27,31,35);
+        }
+
+        .article{
+            min-height: 15em;
+            /* background-color: indigo; */
+            background-color: rgb(27,31,35);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header"></header>
+        <aside class="side-left">
+            <!-- <section class="aside-card profile"></section>
+            <section class="aside-card statistics"></section>
+            <section class="aside-card pages"></section>
+            <section class="aside-card options"></section> -->
+        </aside>
+        <main class="main">
+            <!-- <section class="post"></section>
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article"></article>
+            <article class="article"></article> -->
+        </main>
+        <aside class="side-right">
+            <!-- <section class="aside-card profile"></section>
+            <section class="aside-card statistics"></section>
+            <section class="aside-card pages"></section>
+            <section class="aside-card options"></section> -->
+        </aside>
+    </div>
+</body>
+</html>

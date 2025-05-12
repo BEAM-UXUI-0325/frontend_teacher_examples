@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+    <style>
+        .heart{
+            position: relative;
+            background-color: lightgrey;
+            width: 250px;
+            height: 250px;
+        }
+
+        .circle1, .circle2 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .circle1 {
+            position: absolute;
+            top: 0;
+            left: 0px;
+        }
+
+        .circle2 {
+            position: absolute;
+            top: 0;
+            left: 100px;
+        }
+
+        .triangle{
+            border-top: 100px solid red;
+            border-right: 100px solid transparent;
+            border-left: 100px solid transparent;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 25px;
+            top: 130px;
+        }
+
+        .card{
+            margin-top: 5em;
+            position: relative;
+            width: 20em;
+            padding: 1em;
+            box-shadow: 1px 2px 7px grey;
+        }
+
+        .avatar{
+            width: 5em;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            /* background-color: red; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="heart">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="triangle"></div>
+    </div> -->
+
+    <article class="card">
+        <img class="avatar" src="./logo.png" alt="">
+        <h1>Hello world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, perferendis odio eum quisquam ipsum repellendus eius sapiente officiis exercitationem corporis! Asperiores vitae quae possimus iusto. Praesentium, deserunt eveniet. Ad, repudiandae?</p>
+    </article>
+</body>
+</html>

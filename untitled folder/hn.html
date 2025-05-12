@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2em;
+    row-gap: 1em;
+}
+.header{
+    grid-column: 1/4;
+    padding: 1em;
+    background-color: aqua;
+}
+.aside-left{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 15em;
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px dashed red;
+}
+.bg{
+    height: 4em;
+    background-color: grey;
+}
+.img-control{
+    border-radius: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 2em;
+    left: 15px;
+    width: 4em;
+    height: 4em;
+}
+.detail{
+    display: grid;
+    padding: 1em;
+    padding-top: 2em;
+}
+
+.company-card{
+
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            website header
+        </header>
+        <aside class="aside-left">
+            <section class="profile-card">
+                <div class="bg"></div>
+                <img src="https://img.freepik.com/premium-photo/portrait-employee-mature-man-boardroom-smile-ceo-corporate-auditor-office-bookkeeper-person-table-business-meeting-collaboration-with-planning-project-growth_590464-354399.jpg?w=1380" class="img-control" alt="">
+                <div class="detail">
+                    <h1>Hanolf Nur</h1>
+                    <p>Developer & coding Teacher</p>
+                    <span>berlin</span>
+                    <strong>BIT Intitute of Technology</strong>
+                </div>
+            </section>
+            <section class="stats-card">
+            </section>
+
+
+
+
+            <article class="company-card">
+                <section class="company-bg">
+                    <img class="company-bg-image" width="200" src="https://img.freepik.com/premium-photo/portrait-employee-mature-man-boardroom-smile-ceo-corporate-auditor-office-bookkeeper-person-table-business-meeting-collaboration-with-planning-project-growth_590464-354399.jpg?w=1380" alt="">
+                </section>
+                <section class="company-section company-details">
+                    <img class="company-logo" width="50" src="https://img.freepik.com/premium-vector/custom-premium-branding-logo-design_1271687-705.jpg?w=900" alt="">
+                    <h2>Alpha Programming</h2>
+                    <div class="company-table">
+                        <span class="col1">Activity</span>
+                        <span class="col2">0</span>
+                        <span class="col1">Page Visitors</span>
+                        <span class="col2">3</span>
+                    </div>
+                </section>
+                <hr>
+                <section class="company-section company-cta">
+                    <span class="cta-caption">Grow your business faster</span>
+                    <a class="cta-link" href="">Upgrade your page</a>
+                    <a class="cta-link" href="">Advertise on Linkedin</a>
+                </section>
+                <hr>
+                <section class="company-section company-analytics">
+                    <a class="analytics-btn" href="">See Visitor Analytics</a>
+                </section>
+            </article>
+
+
+
+
+
+            <section class="options-card"></section>
+        </aside>
+        <main class="main-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt tempore eos eius! Nihil ullam et delectus corrupti aliquid unde nisi dicta praesentium, nesciunt necessitatibus tenetur omnis adipisci? Ex, dignissimos.</p>
+        </main>
+        <aside class="aside-right">
+            <a href="l1">li1</a>
+            <a href="l1">li2</a>
+            <a href="l1">li3</a>
+            <a href="l1">li4</a>
+            <a href="l1">li5</a>
+            <div>
+                <button class="btn-footer">footer</button>
+        </div>
+        </aside>
+    </div>
+</body>
+</html>
