@@ -4,6 +4,8 @@ true
 false
 // String/Text
 "Relando Vrapi"
+'Relando Vrapi'
+`Relando Vrapi`
 //Numbers
 const year = 1996
 
@@ -17,7 +19,7 @@ let amount = 2_000_000_000_000n
 100n
 
 //Symbols
-Symbol("Relando")
+Symbol()
 
 // COMPLEX DATA TYPES
 //Objects
