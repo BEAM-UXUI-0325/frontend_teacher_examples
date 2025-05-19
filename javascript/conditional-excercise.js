@@ -5,3 +5,8 @@
 // if it is a teen you say something like: "Hi Anna, you are a teen so we will give you limited access."
 // if it is adult you say something like: "Hi Anna, you are an adult so you have full access."
 // if it is an eldery say something like: "Hi Anna, let us know if you need help to navigate this system."
+
+let fullname = "Anna Smith"
+let age = 22
+
+//...

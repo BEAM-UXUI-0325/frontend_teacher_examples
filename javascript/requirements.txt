@@ -1,0 +1,6 @@
+
+We need a system which checks if Voters are eligible to vote.
+Conditions:
+1. They must be US citizens
+2. They must be within the legal age to vote
+3. They must be citizens of a eligible state
