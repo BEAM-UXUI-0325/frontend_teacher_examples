@@ -3,7 +3,8 @@ const person = {
     name: "Relando Vrapi",
     age: 29,
     isMarried: false,
-    profession: "Teacher"
+    profession: "Teacher",
+    hobbies: ["hiking", "diving", "swimming"]
 }
 
 // let name1 = "Relando Vrapi"
@@ -48,14 +49,14 @@ person.name = "Jack Smith"
 //DELETE Object Properties
 delete person.isMarried
 
-const users = []
+const clients = []
 
-users.push(person)
-users.push(person2)
+clients.push(person)
+clients.push(person2)
 
-users[0] = person3
+clients[0] = person3
 
-console.log(users)
+// console.log(clients)
 
 
 
@@ -70,19 +71,23 @@ const parts = [
     {
         name: "Engine Oil",
         PID: "XPS-001234",
-        price: 22.99,
-        currency: "EUR",
+        price: { 
+            value: 22.99, 
+            currency: "EUR"
+        },
         description: "lorem ipsum et etc etc",
-        images: ["./assests/img1.jpg", "./assests/img2.jpg"],
+        images: ["assests/img1.jpg", "assests/img2.jpg"],
         quantity: 50
     },
     {
         name: "Brake Pads",
         PID: "HRP-584",
-        price: 33.99,
-        currency: "EUR",
+        price: { 
+            value: 22.99, 
+            currency: "EUR"
+        },
         description: "lorem ipsum et etc etc",
-        images: ["./assests/img1.jpg", "./assests/img2.jpg"],
+        images: ["assests/img1.jpg", "assests/img2.jpg"],
         quantity: 78
     }
 ]
@@ -96,8 +101,17 @@ const users = [
         username: "relandovrapi",
         email: "relando@beaminstitute.org",
         password: "dsg4uh3t4t7yegehufefhe",
+        address: {
+            street: "5th Street",
+            apt: null,
+            city: "Tirana",
+            state: "Tirana",
+            country: "Albania",
+            zip: "1017"
+        },
         isVerified: false,
-        isBlocked: false
+        isBlocked: false,
+        hobbies: ["hiking", "diving", "swimming"],
     },
     {
         userId: 1245236347,
@@ -106,7 +120,20 @@ const users = [
         username: "jsmith",
         email: "jsmith@beaminstitute.org",
         password: "yey5r6yr5g6",
+            address: {
+            street: "5th Street",
+            apt: null,
+            city: "Tirana",
+            state: "Tirana",
+            country: "Albania",
+            zip: "1017"
+        },
         isVerified: true,
-        isBlocked: false
+        isBlocked: false,
+        hobbies: ["hiking", "diving", "swimming"]
     },
 ]
+
+
+console.log(users[1].hobbies[2])
+
