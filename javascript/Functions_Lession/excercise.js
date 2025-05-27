@@ -102,5 +102,12 @@ function calculateEarnings(inputArray){
     return grandTotal
 }
 
+// Create a function called displayStock which you give it an array as input
+// and it console logs Name of the Product with Stock next to it
+// function doesn't return anything
+// 1. Wireless Bluetooth Headphones - 45
+// 2. Ceramic Dinner Plate Set - 0
+
+
 const result = calculateEarnings(salesData)
 console.log(result)
