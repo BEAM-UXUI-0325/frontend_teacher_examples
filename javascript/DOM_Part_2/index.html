@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header" id="header">
+            <span class="logo">My WEB</span>
+            <section class="web-nav">
+                <nav>
+                    <ul class="nav-links">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="theme-btn">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                    <span>Theme</span>
+                </button>
+            </section>
+            <section class="mobile-nav">
+                <button class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="mobile-dropdown hidden">
+                    <ul class="nav-links column">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main class="main">
+            <section class="user-input">
+                <form class="user-form" id="user-form">
+                    <div class="form-control">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="fullname" placeholder="Enter your name...">
+                    </div>
+                    <div class="form-control">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age...">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email...">
+                    </div>
+                    <button type="submit">Save</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+            <section class="user-display">
+                <!-- <article class="card">
+                    <h2>Jack Smaith</h2>
+                    <h5>29 years old</h5>
+                    <p>thevrapi@gmail.com</p>
+                </article> -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>

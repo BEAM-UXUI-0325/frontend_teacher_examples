@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    background-color: lightgrey;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1em;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.web-nav {
+    display: flex;
+    gap: 1em;
+}
+
+.mobile-nav {
+    display: none;
+    position: relative;
+}
+
+.mobile-dropdown {
+    position: absolute;
+    right: 0px;
+    top: 2em;
+    padding: 1em;
+    background-color: white;
+    box-shadow: -2px 4px 5px gray;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.user-input {
+    padding: 2em;
+    background-color: beige;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-inline: auto;
+    max-width: 350px;
+    padding: 1em;
+    background-color: white;
+    box-shadow: 1px 2px 5px grey;
+    border-radius: 5px;
+
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: .5em;
+    padding-inline: 2em;
+    margin: 1em;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    width: fit-content;
+    color: white;
+}
+
+.user-display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px){
+    .web-nav {
+        display: none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+}
